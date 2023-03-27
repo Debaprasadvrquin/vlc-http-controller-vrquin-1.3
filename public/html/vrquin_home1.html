@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: rgb(209, 209, 209);">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+
+    <!-- <meta name="viewport" content="remote controller" , initial-scale=1.0"> -->
+    <meta name="viewport" content="user-scalable=no">
+    <title>VRQUIN</title>
+    <link rel="manifest" href="manifest">
+    <link rel="stylesheet" href="css/vrquinhome.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"> -->
+    <link rel="apple-touch-icon" sizes="128x128" href="/images/vrquin-64.png">
+    <link rel="icon" sizes="192x192" href="/images/vrquin-128.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <style>
+        .prevent-select {
+            -webkit-user-select: none;
+            /* Safari */
+            -ms-user-select: none;
+            /* IE 10 and IE 11 */
+            user-select: none;
+            /* Standard syntax */
+        }
+    </style>
+</head>
+
+<body>
+
+    <video autoplay loop muted id="myVideo">
+        <source src="/background.mp4" type="video/mp4">
+    </video>
+    <div style="display:flex; position:fixed">
+        <img src=" /images/vrquin-641.png" alt="" class="client-logo">
+        <img src="/images/vrquin-1282.png" alt="" class="my-logo">
+    </div>
+    <div">
+        <p>Current Date and Time is <span id='date-time'></span>.</p>
+        </div>
+
+        <div class="welcome" style="position:fixed">
+            <div class="o-button">
+                <div class="wp"> WELCOME TO ANDHRA PRADESH TOURISM</div>
+            </div>
+            <div class="n-button">
+                <div class="language-c"> choose your language</div>
+            </div>
+            <div class="m-button">
+                <div class="p-button">
+                    <div class="welcome-button">
+                        <div class=" l-button">हिन्दी</div> <br>
+                        <div class="l-button">English</div>
+                        <div class="l-button">తెలుగు</div>
+                        <div class="l-button">ଓଡ଼ିଆ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var dt = new Date();
+            document.getElementById('date-time').innerHTML = dt;
+        </script>
+</body>
+
+
+</html>

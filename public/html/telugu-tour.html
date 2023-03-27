@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: rgb(209, 209, 209);">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+
+    <!-- <meta name="viewport" content="remote controller" , initial-scale=1.0"> -->
+    <meta name="viewport" content="user-scalable=no">
+    <title>VRQUIN</title>
+    <link rel="manifest" href="manifest">
+    <link rel="stylesheet" href="css/vrquinhome.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"> -->
+    <link rel="apple-touch-icon" sizes="128x128" href="/images/vrquin-64.png">
+    <link rel="icon" sizes="192x192" href="/images/vrquin-128.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+
+<body>
+
+    <!-- <video autoplay loop muted id="myVideo">
+        <source src="/background.mp4" type="video/mp4">
+    </video> -->
+    <div class="b-img">
+        <img src="/images/bg.jpg">
+    </div>
+    <div class=top-img>
+        <div class="heaer-img"><img src="/images/hd.png" alt="header-img"></div>
+        <!-- <img src=" /images/vrquin-641.png" class="client-logo">
+        <img src="/images/vrquin-1282.png" class="my-logo"> -->
+    </div>
+    <a class="map-visakha" onclick="openForm()">
+        <img src=" /images/vizag.png">
+    </a>
+    <div id="popupForm" class="popupForm-map" style="">
+        <div id="closeForm" class="closeForm" onclick="closeForm()">X</div>
+        <img src="/images/vizag.png" alt="vizag-img" class="show-map-vizag" style="">
+    </div>
+    <div>
+        <p class="about-visakha-map" style="">మనం దానిని ఎందుకు ఉపయోగిస్తాము?
+            ఒక పేజీలో చదవగలిగే కంటెంట్ ద్వారా పాఠకుడు పరధ్యానంలో ఉంటారనేది చాలా కాలంగా స్థిరపడిన వాస్తవం
+            దాని లేఅవుట్ చూస్తోంది. లోరెమ్ ముఖ్యాంశం ఏమిటంటే ఇది ఎక్కువ లేదా తక్కువ సాధారణ
+            పంపిణీని కలిగి ఉంటుంది
+            అక్షరాలు, అది చదవగలిగే ఇంగ్లీష్ లాగా కనిపిస్తుంది.</p>
+    </div>
+
+    <div class="welcome" style="position:fixed">
+        <div class="o-button">
+            <div class="wp">ఆంధ్రప్రదేశ్ టూరిజంకు స్వాగతం</div>
+        </div>
+        <div class="container ">
+            <div class="block">
+                <div class="h-button">
+                    <div class="wph">పూర్తయిన ప్రాజెక్ట్</div>
+                </div>
+                <div class="completed-img">
+
+                    <a id="v_c_p_1" href="/t-visakhapatnam" class="myimg"><img src="../images/12 (1).jpeg"
+                            alt="product-logo"></a>
+                    <a id="v_c_p_2" href="/t-visakhapatnam" class="myimg"><img src="../images/12 (2).jpeg"
+                            alt="product-logo"></a>
+                    <a id="v_c_p_3" href="/t-visakhapatnam" class="myimg"><img src="../images/12 (3).jpeg"
+                            alt="product-logo"></a>
+                    <a id="v_c_p_4" href="/t-visakhapatnam" class="myimg"><img src="../images/12 (4).jpeg"
+                            alt="product-logo"></a>
+                    <a id="v_c_p_5" href="/t-visakhapatnam" class="myimg"><img src="../images/12 (10).jpg"
+                            alt="product-logo"></a>
+                    <a id="v_c_p_6" href="/t-visakhapatnam" class="myimg"><img src="../images/12 (5).jpeg"
+                            alt="product-logo"></a>
+                    <a id="v_c_p_7" href="/t-visakhapatnam" class="myimg"><img src="../images/12 (6).jpeg"
+                            alt="product-logo"></a>
+                    <a id="v_c_p_8" href="/t-visakhapatnam" class="myimg"><img src="../images/12 (7).jpeg"
+                            alt="product-logo"></a>
+                </div>
+            </div>
+
+
+            <div class="block">
+                <div class="h-button">
+                    <div class="wph">రాబోయే ప్రాజెక్ట్</div>
+                </div>
+                <div class="opening-img">
+                    <a id="v_u_p_1" href="/t-visakhapatnam" class="myimg"><img src="../images/12 (9).jpeg"
+                            alt="product-logo"></a>
+                    <a id="v_u_p_2" href="/t-visakhapatnam" class="myimg"><img src="../images/12 (10).jpg"
+                            alt="product-logo"></a>
+                    <a id="v_u_p_3" href="/t-visakhapatnam" class="myimg"><img src="../images/12 (8).jpeg"
+                            alt="product-logo"></a>
+                    <a id="v_u_p_4" href="/t-visakhapatnam" class="myimg"><img src="../images/12 (7).jpeg"
+                            alt="product-logo"></a>
+                    <a id="v_u_p_5" href="/t-visakhapatnam" class="myimg"><img src="../images/12 (6).jpeg"
+                            alt="product-logo"></a>
+                    <a id="v_u_p_6" href="/t-visakhapatnam" class="myimg"><img src="../images/12 (2).jpeg"
+                            alt="product-logo"></a>
+                    <a id="v_u_p_7" href="/t-visakhapatnam" class="myimg"><img src="../images/12 (5).jpeg"
+                            alt="product-logo"></a>
+                    <a id="v_u_p_8" href="/t-visakhapatnam" class="myimg"><img src="../images/12 (3).jpeg"
+                            alt="product-logo"></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="down-para">
+            <p>మనం దానిని ఎందుకు ఉపయోగిస్తాము?
+                ఒక పేజీలో చదవగలిగే కంటెంట్ ద్వారా పాఠకుడు పరధ్యానంలో ఉంటారనేది చాలా కాలంగా స్థిరపడిన వాస్తవం
+                దాని లేఅవుట్ చూస్తోంది. లోరెమ్ ఇప్సమ్‌ను ఉపయోగించడం యొక్క ముఖ్యాంశం ఏమిటంటే ఇది ఎక్కువ లేదా తక్కువ
+                సాధారణ
+                పంపిణీని కలిగి ఉంటుంది
+                అక్షరాలు, 'కంటెంట్ హియర్, కంటెంట్ హియర్' ఉపయోగించకుండా, అది చదవగలిగే ఇంగ్లీష్ లాగా కనిపిస్తుంది.</p>
+        </div>
+        <a href="/map_telugu" id="ltelugu" class="back-button-e">వెనుకకు
+        </a>
+
+
+
+    </div>
+    <div class="button-img">
+        <img src=" /images/skyline.png">
+    </div>
+    <script>
+        function openForm() {
+            document.getElementById("popupForm").style.display = "block";
+        }
+        function closeForm() {
+            document.getElementById("popupForm").style.display = "none";
+        }
+    </script>
+    <script type="text/javascript" src="/js/vrquin.js"></script>
+    <script>
+        function callVLC(endpoint, data, cb) {
+            d3.json("/" + endpoint, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            }).then(function (params) {
+                console.log(params);
+                if (cb) {
+                    cb(params)
+                }
+            })
+        }
+        const wlandhra = d3.select("#wlandhra");
+        wlandhra.on("click", function () {
+            callVLC("wlandhra", {})
+        })
+        const ltelugu = d3.select("#ltelugu");
+        ltelugu.on("click", function () {
+            callVLC("ltelugu", {})
+        })
+        const v_c_p_1 = d3.select("#v_c_p_1");
+        v_c_p_1.on("click", function () {
+            callVLC("v_c_p_1", {})
+        })
+        const v_c_p_2 = d3.select("#v_c_p_2");
+        v_c_p_2.on("click", function () {
+            callVLC("v_c_p_2", {})
+        })
+        const v_c_p_3 = d3.select("#v_c_p_3");
+        v_c_p_3.on("click", function () {
+            callVLC("v_c_p_3", {})
+        })
+        const v_c_p_4 = d3.select("#v_c_p_4");
+        v_c_p_4.on("click", function () {
+            callVLC("v_c_p_4", {})
+        })
+        const v_c_p_5 = d3.select("#v_c_p_5")
+        v_c_p_5.on("click", function () {
+            callVLC("v_c_p_5", {})
+        })
+        const v_c_p_6 = d3.select("#v_c_p_6");
+        v_c_p_6.on("click", function () {
+            callVLC("v_c_p_6", {})
+        })
+        const v_c_p_7 = d3.select("#v_c_p_7");
+        v_c_p_7.on("click", function () {
+            callVLC("v_c_p_7", {})
+        })
+        const v_c_p_8 = d3.select("#v_c_p_8");
+        v_c_p_8.on("click", function () {
+            callVLC("v_c_p_8", {})
+        })
+        const v_u_p_1 = d3.select("#v_u_p_1");
+        v_u_p_1.on("click", function () {
+            callVLC("v_u_p_1", {})
+        })
+        const v_u_p_2 = d3.select("#v_u_p_2");
+        v_u_p_2.on("click", function () {
+            callVLC("v_u_p_2", {})
+        })
+        const v_u_p_3 = d3.select("#v_u_p_3");
+        v_u_p_3.on("click", function () {
+            callVLC("v_u_p_3", {})
+        })
+        const v_u_p_4 = d3.select("#v_u_p_4");
+        v_u_p_4.on("click", function () {
+            callVLC("v_u_p_4", {})
+        })
+        const v_u_p_5 = d3.select("#v_u_p_5");
+        v_u_p_5.on("click", function () {
+            callVLC("v_u_p_5", {})
+        })
+        const v_u_p_6 = d3.select("#v_u_p_6");
+        v_u_p_6.on("click", function () {
+            callVLC("v_u_p_6", {})
+        })
+        const v_u_p_7 = d3.select("#v_u_p_7");
+        v_u_p_7.on("click", function () {
+            callVLC("v_u_p_7", {})
+        })
+        const v_u_p_8 = d3.select("#v_u_p_8");
+        v_u_p_8.on("click", function () {
+            callVLC("v_u_p_8", {})
+        })
+    </script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: rgb(209, 209, 209);">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    
+    <!-- <meta name="viewport" content="remote controller" , initial-scale=1.0"> -->
+    <meta name="viewport" content="user-scalable=no">
+    <title>VRQUIN</title>
+    <link rel="manifest" href="manifest">
+    <link rel="stylesheet" href="css/vrquinhome.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"> -->
+    <link rel="apple-touch-icon" sizes="128x128" href="/images/vrquin-64.png">
+    <link rel="icon" sizes="192x192" href="/images/vrquin-128.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <style>
+        .prevent-select {
+            -webkit-user-select: none;
+            /* Safari */
+            -ms-user-select: none;
+            /* IE 10 and IE 11 */
+            user-select: none;
+            /* Standard syntax */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <video autoplay loop muted id="myVideo">
+        <source src="/background.mp4" type="video/mp4">
+    </video> -->
+    <div class="b-img">
+        <img src="/images/bg.jpg">
+    </div>
+    <div style="display:flex; position:fixed;margin-left: -8px;margin-top: -10px;">
+        <div class="heaer-img"><img src="/images/hd.png" alt="header-img"></div>
+        <!-- <img src=" /images/vrquin-641.png" class="client-logo">
+        <img src="/images/vrquin-1282.png" class="my-logo"> -->
+    </div>
+    <!-- <div style="display:flex; position:fixed">
+        <img src=" /images/vrquin-641.png" class="client-logo">
+        <img src="/images/vrquin-1282.png" class="my-logo">
+    </div> -->
+    <div class="welcome" style="position:fixed">
+        <div class="o-button">
+            <div class="wp">आंध्र प्रदेश पर्यटन में आपका स्वागत है</div>
+        </div>
+        <div class="visa-scoll" style="position: fixed;">
+            <div class="visa-scoll-1" style="position: fixed;">
+                <div class="slideshow-container">
+                    <div class="mySlides">
+                        <img src="/images/1.png">
+                    </div>
+                    <div class="mySlides">
+                        <img src="/images/2.png">
+                    </div>
+                    <div class="mySlides">
+                        <img src="/images/3.png">
+                    </div>
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            <div class="visa-scoll-2" style="position: fixed;">
+                <div class="col-sm-6">
+                    <div class="item-desc-1">
+                        <div class="item-year-1">
+                            <h3 style="color:rgb(132, 136, 136)">इस मद के बारे में</h3>
+                            <p>
+                            <ul>
+
+                                <li>शक्तिशाली 500mAh बैटरी क्षमता 20 घंटे तक का बेहतर प्लेबैक समय प्रदान करती है
+                                </li>
+                                <li>
+                                    इसे एर्गोनॉमिक रूप से डिज़ाइन किया गया है और ओवर-ईयर हेडफ़ोन के रूप में संरचित किया
+                                    गया है
+                                    प्रदान करना
+                                    सर्वश्रेष्ठ उपयोगकर्ता अनुभव</li>
+
+                            </ul>
+
+
+                            </p>
+                        </div>
+                        <div class="prd-info">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="prd-location">
+                                        <div class="scroll">
+                                            <button onclick="openForm()">और देखें</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-img button-img-visak">
+                    <img src=" /images/skyline.png">
+                </div>
+                <a id="map_e_visak" class="back-button-f" href="/hindi-tour">पीछे
+                </a>
+            </div>
+            <div id="popupForm" class="popupForm">
+                <div id="closeForm" class="closeForm" onclick="closeForm()">X</div>
+                <img src="/images/vrquin.png" alt="scan" class="scan">
+            </div>
+            <!-- <div class="button-img button-img-visak">
+                <img src=" /images/skyline.png">
+            </div> -->
+        </div>
+
+
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+        <script>
+            function openForm() {
+                document.getElementById("popupForm").style.display = "block";
+            }
+            function closeForm() {
+                document.getElementById("popupForm").style.display = "none";
+            }
+        </script>
+        <script type="text/javascript" src="/js/vrquin.js"></script>
+        <script>
+            function callVLC(endpoint, data, cb) {
+                d3.json("/" + endpoint, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(data)
+                }).then(function (params) {
+                    console.log(params);
+                    if (cb) {
+                        cb(params)
+                    }
+                })
+            }
+            const map_e_visak = d3.select("#map_e_visak");
+            map_e_visak.on("click", function () {
+                callVLC("map_e_visak", {})
+            })
+        </script>
+</body>
+
+</html>
